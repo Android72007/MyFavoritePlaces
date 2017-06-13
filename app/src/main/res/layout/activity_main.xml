@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:background="@drawable/side_nav_bar"
+    android:paddingTop="78dp"
+    tools:context="com.example.noone.geofencingtest1.MainActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_location"
+        android:text="Hello User !!!" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="LocationUpdate"
+        android:id="@+id/getLocation"
+        android:text="Save to favourites"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place_name"
+        android:hint="Place Name..."
+        android:layout_margin="16dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="14sp"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="savelocation"
+        android:text="Save Location"
+        android:layout_margin="16dp"
+        android:id="@+id/save_location"
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>

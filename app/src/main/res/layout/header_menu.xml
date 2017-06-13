@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/side_nav_bar">
+<ImageView
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="24dp"
+    android:id="@+id/profile_photo"
+    android:src="@mipmap/ic_person1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi User.."
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/profile_photo"
+        android:layout_toEndOf="@+id/profile_photo"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/profile_photo" />
+</RelativeLayout>

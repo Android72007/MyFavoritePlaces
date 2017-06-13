@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rec_shape"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout"
+    tools:context="com.example.noone.geofencingtest1.MyFavouritePlaces">
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:padding="8dp"-->
+        <!--android:scrollbarAlwaysDrawVerticalTrack="true">-->
+    <!--</ListView>-->
+    
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:padding="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:id="@+id/image_empty"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="65sp"
+        android:fontFamily="cursive"
+        android:text="No locations added"/>
+
+</LinearLayout>
